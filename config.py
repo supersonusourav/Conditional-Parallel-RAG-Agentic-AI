@@ -7,12 +7,16 @@ from langchain_huggingface import HuggingFaceEmbeddings
 
 load_dotenv()
 
-# Point explicitly to the running MLflow UI server
-mlflow.set_tracking_uri("http://127.0.0.1:5001")
-mlflow.set_experiment("College_Assistant_RAG")
+# Set up MLflow tracking (Fallback to local file store if server is unreachable)
+MLFLOW_URI = os.getenv("MLFLOW_TRACKING_URI", "http://127.0.0.1:5001")
 
-# Enable auto-tracing for LangChain/LangGraph
-autolog()
+try:
+    mlflow.set_tracking_uri(MLFLOW_URI)
+    mlflow.set_experiment("College_Assistant_RAG")
+    autolog()
+except Exception as e:
+    # Disable remote tracking if server is unavailable (e.g. on Streamlit Cloud)
+    print(f"MLflow tracking disabled or unreachable at {MLFLOW_URI}: {e}")
 
 EMBEDDING_MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
 LLM_MODEL_NAME = "llama-3.3-70b-versatile"
