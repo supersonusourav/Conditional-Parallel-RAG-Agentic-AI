@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.env
+faiss_academic_index/
+faiss_fee_index/
+.vscode/

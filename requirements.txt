@@ -1,0 +1,22 @@
+# LangChain & LangGraph Framework
+langchain==1.3.14
+langgraph==1.2.10
+langchain-groq==1.1.3
+
+# RAG & Document Processing
+langchain-community==0.4.2
+langchain-text-splitters==1.1.2
+langchain-huggingface==1.2.2
+sentence-transformers==5.7.0
+faiss-cpu==1.15.0
+pypdf==6.15.0
+
+# Tracking & Utilities
+ mlflow==3.15.1
+python-dotenv==1.2.2
+pydantic==2.13.4
+textstat==0.7.13
+tiktoken==0.13.0
+litellm==1.96.2
+
+ streamlit==1.61.1

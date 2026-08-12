@@ -1,0 +1,58 @@
+[
+  {
+    "id": "eval_001",
+    "inputs": "What is the fee of first semester and what are the subjects?",
+    "programme": "BCA",
+    "expected_categories": ["academic", "fee"],
+    "ground_truth_context": "Fee: Total 1st Year BCA fee is Rs. 1,20,000 (Academic Fee: Rs. 85,000, University Fee: Rs. 22,000, Student Activity Fee: Rs. 8,000, Security Deposit: Rs. 5,000). Subjects: BCA Semester I includes Mathematics I (4 credits), Technical Communication (3 credits), Introduction to Programming using C (4 credits), Introduction to Computers and IT (4 credits), Physics (4 credits), Practical I - C Programming Lab (3 credits), Practical II - IT Lab (3 credits), Communication Skills (NUES) (2 credits). Total credits: 27.",
+    "ground_truth_answer": "For BCA 1st Year, the total annual fee is Rs. 1,20,000 (which includes Rs. 85,000 Academic Fee, Rs. 22,000 University Fee, Rs. 8,000 Student Activity Fee, and a Rs. 5,000 refundable Security Deposit). The Semester I subjects are: Mathematics I, Technical Communication, Introduction to Programming using C, Introduction to Computers and IT, Physics, Practical I - C Programming Lab, Practical II - IT Lab, and Communication Skills (NUES)."
+  },
+  {
+    "id": "eval_002",
+    "inputs": "How much attendance is required to sit for exams, and what happens if I am detained?",
+    "programme": "BBA",
+    "expected_categories": ["academic"],
+    "ground_truth_context": "A student must maintain a minimum attendance of 75 percent in aggregate. The Director may condone up to 5 percent for valid reasons. Under no circumstances can a student with less than 70 percent aggregate attendance appear in semester-end exams. Students detained due to shortage of attendance shall not be promoted to the next academic year and must take re-admission to repeat all courses with the next batch.",
+    "ground_truth_answer": "You must maintain a minimum aggregate attendance of 75%. Shortage up to 5% can be condoned by the Director, but anyone below 70% is strictly prohibited from taking the semester-end examinations. If detained, you will not be promoted and must take re-admission to repeat the entire academic year with the subsequent batch."
+  },
+  {
+    "id": "eval_003",
+    "inputs": "What are the late payment penalty charges and what is the re-appear exam fee?",
+    "programme": "B.Com (H)",
+    "expected_categories": ["academic", "fee"],
+    "ground_truth_context": "Late fee penalty: 1-15 days delay is Rs. 500 per day; 16-30 days delay is Rs. 1,000 per day; 31-45 days delay is Rs. 2,000 per day; beyond 45 days may result in cancellation of admission. Re-appear Examination Fee: Rs. 1,200 per paper payable to the University through the Institute.",
+    "ground_truth_answer": "Late fee penalties range from Rs. 500/day (1-15 days late), Rs. 1,000/day (16-30 days late), to Rs. 2,000/day (31-45 days late). Beyond 45 days, admission may be cancelled. The re-appear examination fee is Rs. 1,200 per paper."
+  },
+  {
+    "id": "eval_004",
+    "inputs": "What electives can I choose in the 5th semester and what is the total cost for BBA?",
+    "programme": "BBA",
+    "expected_categories": ["academic", "fee"],
+    "ground_truth_context": "Total BBA programme cost over 3 years: Rs. 3,19,500 (inclusive of security deposit). BCA Electives for Semester V: Software Testing, Microprocessor, Advanced Computer Networks, Web Based Programming, Business Economics (offered if at least 1/3rd of class opts for it). Note: Summer training guidelines apply to BBA after 4th semester.",
+    "ground_truth_answer": "The total 3-year programme cost for BBA is Rs. 3,19,500. Note that specific elective lists in the handbook are provided for BCA (e.g., Software Testing, Microprocessor, Business Economics), while BBA students undergo summer training and complete a Project Report with Viva in their final year."
+  },
+  {
+    "id": "eval_005",
+    "inputs": "Hi, who are you and what time does the college open?",
+    "programme": "BCA",
+    "expected_categories": ["academic", "general"],
+    "ground_truth_context": "The Institute operates from Monday to Saturday, from 8:30 AM to 5:30 PM, excluding Sundays and holidays notified by the Institute.",
+    "ground_truth_answer": "Hello! I am your college assistant. The institute operates from Monday to Saturday between 8:30 AM and 5:30 PM."
+  },
+  {
+    "id": "eval_006",
+    "inputs": "What is the criteria for promotion from first year to second year?",
+    "programme": "BCA",
+    "expected_categories": ["academic"],
+    "ground_truth_context": "A student who obtains less than 50 percent of the total credits in the first year examinations covering the first and second semester combined shall not be promoted to the second year of the programme.",
+    "ground_truth_answer": "To be promoted from the first year to the second year, you must secure at least 50% of the total combined credits across Semesters I and II."
+  },
+  {
+    "id": "eval_007",
+    "inputs": "Is the security deposit refundable and how can I pay my tuition fee?",
+    "programme": "B.Com (H)",
+    "expected_categories": ["fee"],
+    "ground_truth_context": "Security Deposit of Rs. 5,000 is refundable on completion of the programme or withdrawal after obtaining clearance through No Dues Certificate. Payment Mode: All fees must be submitted through a Demand Draft in favour of 'Institute of Innovation in Technology and Management' payable at New Delhi. Cash and online transfers are not accepted.",
+    "ground_truth_answer": "Yes, the Rs. 5,000 security deposit is refundable upon programme completion or withdrawal after getting a No Dues Certificate. All regular fees must be paid via Demand Draft drawn in favor of 'Institute of Innovation in Technology and Management' payable at New Delhi (cash/online transfer not accepted)."
+  }
+]
