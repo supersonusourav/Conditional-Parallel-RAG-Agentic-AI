@@ -1,5 +1,4 @@
 import streamlit as st
-from graph import app
 from state import State
 
 # -----------------------------------------------------------------------------
@@ -10,6 +9,15 @@ st.set_page_config(
     page_icon="🎓",
     layout="wide"
 )
+
+# Cache heavy LangGraph & Embedding startup
+@st.cache_resource
+def load_app():
+    from graph import app
+    return app
+
+# Load graph application once
+app = load_app()
 
 # Custom CSS for Olive Green Theme
 st.markdown("""
