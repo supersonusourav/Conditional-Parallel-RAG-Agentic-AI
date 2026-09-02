@@ -19,7 +19,7 @@ except Exception as e:
     print(f"MLflow tracking disabled or unreachable at {MLFLOW_URI}: {e}")
 
 EMBEDDING_MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
-LLM_MODEL_NAME = "openai/gpt-oss-120b"
+LLM_MODEL_NAME = "qwen/qwen3.6-27b"
 #LLM_MODEL_NAME = "llama-3.3-70b-versatile"
 
 embeddings = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL_NAME)
